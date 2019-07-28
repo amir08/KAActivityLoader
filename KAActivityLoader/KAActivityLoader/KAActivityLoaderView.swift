@@ -45,7 +45,7 @@ class KAActivityLoaderView: UIView {
         let y = (self.bounds.size.height / 2) - 20
         
         activityIndicator.frame = CGRect(x: x, y: y, width: 40, height: 40)
-        activityIndicator.activityIndicatorViewStyle = .whiteLarge
+        activityIndicator.style = .whiteLarge
         activityIndicator.hidesWhenStopped = true
         
         self.addSubview(activityIndicator)
