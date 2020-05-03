@@ -11,7 +11,6 @@ import UIKit
 class ActivityLoaderManager: NSObject {
 
     static let shared = ActivityLoaderManager()
-    
     private let activityLoader = KAActivityLoaderView()
     
     //MARK:- Show Loader on screen
@@ -23,7 +22,6 @@ class ActivityLoaderManager: NSObject {
      */
     
     func showLoader(text: String) {
-        
          activityLoader.showActivityIndicator(loaderText: text)
     }
     
@@ -36,17 +34,13 @@ class ActivityLoaderManager: NSObject {
      
      */
     func changeLoaderText(newText: String) {
-        
         if activityLoader.activityIndicator.isAnimating {
-            
             activityLoader.loadingLabel.text = newText
-            
         }
         else{
-            
-            debugPrint("Initialized the loader first!")
+            debugPrint("KAActivityLoader: Initialize the loader first!")
         }
-        
+    
     }
     
     //MARK:- Hide Loader
@@ -54,7 +48,6 @@ class ActivityLoaderManager: NSObject {
      Hide activity loader
      */
     func hideLoader() {
-        
         activityLoader.hideActivityIndicator()
     }
     
