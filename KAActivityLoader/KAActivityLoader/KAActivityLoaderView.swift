@@ -86,7 +86,7 @@ class KAActivityLoaderView: UIView {
                 if let window = UIApplication.shared.currentWindow {
                     window.addSubview(self)
                 }else{
-                    debugPrint("KAActivityLoader: Oops no window found")
+                    debugPrint("KAActivityLoader: Oops no window found!")
                 }
             } else {
                UIApplication.shared.keyWindow?.addSubview(self)
